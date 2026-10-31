@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos yachts — MARÉA</title>
+    <meta name="description" content="Découvrez la collection de yachts MARÉA : M35, M60 et Explorer 90.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="yachts-page">
+
+<header class="header" id="header">
+    <a href="index.html" class="logo">MARÉA<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+        <a href="index.html">Accueil</a>
+        <a href="yachts.html" class="active">Nos yachts</a>
+        <a href="chantier.html">Notre chantier</a>
+        <a href="innovation.html">Innovation</a>
+        <a href="personnalisation.html">Sur mesure</a>
+        <a href="contact.html" class="nav-contact">Contact ↗</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="yachts-hero">
+        <div class="yachts-hero-image"></div>
+        <div class="yachts-hero-overlay"></div>
+
+        <div class="yachts-hero-content reveal">
+            <span class="section-label">THE MARÉA COLLECTION</span>
+            <h1>THE ART OF<br><span>EXPLORATION.</span></h1>
+            <p>
+                Trois visions, une même exigence.
+                Découvrez une collection pensée pour redéfinir
+                l'expérience de la navigation.
+            </p>
+        </div>
+
+        <div class="yachts-hero-bottom">
+            <span>THREE MODELS. ONE VISION.</span>
+            <span>COLLECTION 2026</span>
+        </div>
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="yachts-intro section-padding">
+        <div class="yachts-intro-number reveal">
+            <span class="section-label">01 / OUR FLEET</span>
+            <span class="intro-small">A COLLECTION<br>OF EXCEPTION.</span>
+        </div>
+
+        <div class="yachts-intro-content reveal">
+            <h2>
+                Find your<br>
+                <span>horizon.</span>
+            </h2>
+
+            <p>
+                Chaque modèle MARÉA possède sa propre personnalité.
+                Du yacht sportif au grand yacht d'exploration,
+                notre collection associe design contemporain,
+                confort et recherche technique.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FILTERS -->
+
+    <section class="yachts-catalog section-padding">
+
+        <div class="catalog-top reveal">
+            <div>
+                <span class="section-label">02 / THE COLLECTION</span>
+                <h2>Our <span>yachts.</span></h2>
+            </div>
+
+            <span class="catalog-count">03 MODELS AVAILABLE</span>
+        </div>
+
+        <div class="yacht-filters reveal">
+            <button class="filter-btn active" data-filter="all">Tous les modèles</button>
+            <button class="filter-btn" data-filter="sport">Sport</button>
+            <button class="filter-btn" data-filter="signature">Signature</button>
+            <button class="filter-btn" data-filter="explorer">Explorer</button>
+        </div>
+
+
+        <div class="catalog-grid">
+
+            <!-- M35 -->
+
+            <article class="catalog-card reveal" data-category="sport">
+
+                <a href="m35.html" class="catalog-image catalog-m35">
+                    <span class="catalog-index">01 / SPORT SERIES</span>
+                    <span class="catalog-view">VIEW MODEL ↗</span>
+                </a>
+
+                <div class="catalog-info">
+                    <div>
+                        <span class="catalog-category">SPORT SERIES</span>
+                        <h3>MARÉA M35</h3>
+                        <p>La performance rencontre l'élégance.</p>
+                    </div>
+                    <span class="catalog-length">35 M</span>
+                </div>
+
+                <div class="catalog-specs">
+                    <div><span>LONGUEUR</span><strong>35 m</strong></div>
+                    <div><span>STYLE</span><strong>Sport</strong></div>
+                    <div><span>PROPULSION</span><strong>Diesel</strong></div>
+                </div>
+
+                <a href="m35.html" class="catalog-link">Explorer le M35 <span>↗</span></a>
+
+            </article>
+
+
+            <!-- M60 -->
+
+            <article class="catalog-card reveal" data-category="signature">
+
+                <a href="m60.html" class="catalog-image catalog-m60">
+                    <span class="catalog-index">02 / SIGNATURE SERIES</span>
+                    <span class="catalog-view">VIEW MODEL ↗</span>
+                </a>
+
+                <div class="catalog-info">
+                    <div>
+                        <span class="catalog-category">SIGNATURE SERIES</span>
+                        <h3>MARÉA M60</h3>
+                        <p>Une nouvelle dimension du voyage.</p>
+                    </div>
+                    <span class="catalog-length">60 M</span>
+                </div>
+
+                <div class="catalog-specs">
+                    <div><span>LONGUEUR</span><strong>60 m</strong></div>
+                    <div><span>STYLE</span><strong>Signature</strong></div>
+                    <div><span>PROPULSION</span><strong>Hybride</strong></div>
+                </div>
+
+                <a href="m60.html" class="catalog-link">Explorer le M60 <span>↗</span></a>
+
+            </article>
+
+
+            <!-- EXPLORER -->
+
+            <article class="catalog-card reveal" data-category="explorer">
+
+                <a href="explorer.html" class="catalog-image catalog-explorer">
+                    <span class="catalog-index">03 / EXPLORER SERIES</span>
+                    <span class="catalog-view">VIEW MODEL ↗</span>
+                </a>
+
+                <div class="catalog-info">
+                    <div>
+                        <span class="catalog-category">EXPLORER SERIES</span>
+                        <h3>EXPLORER 90</h3>
+                        <p>Conçu pour aller plus loin.</p>
+                    </div>
+                    <span class="catalog-length">90 M</span>
+                </div>
+
+                <div class="catalog-specs">
+                    <div><span>LONGUEUR</span><strong>90 m</strong></div>
+                    <div><span>STYLE</span><strong>Explorer</strong></div>
+                    <div><span>PROPULSION</span><strong>Hybride</strong></div>
+                </div>
+
+                <a href="explorer.html" class="catalog-link">Explorer le modèle <span>↗</span></a>
+
+            </article>
+
+        </div>
+
+        <p class="catalog-disclaimer">
+            Modèles et caractéristiques fictifs, imaginés pour l'univers MARÉA.
+        </p>
+
+    </section>
+
+
+    <!-- DESIGN -->
+
+    <section class="yachts-design">
+
+        <div class="yachts-design-image"></div>
+
+        <div class="yachts-design-content reveal">
+            <span class="section-label">03 / A DISTINCTIVE DESIGN</span>
+
+            <h2>
+                A signature<br>
+                <span>at sea.</span>
+            </h2>
+
+            <p>
+                Une silhouette reconnaissable, des volumes équilibrés
+                et une attention particulière portée à chaque détail.
+                Notre collection exprime une même vision du design naval.
+            </p>
+
+            <a href="innovation.html" class="text-link">
+                Découvrir notre approche <span>↗</span>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- CUSTOM -->
+
+    <section class="yachts-custom section-padding">
+
+        <div class="yachts-custom-content reveal">
+            <span class="section-label">04 / BEYOND STANDARD</span>
+
+            <h2>
+                One yacht.<br>
+                <span>Your identity.</span>
+            </h2>
+
+            <p>
+                Chaque modèle peut devenir un projet unique.
+                Matériaux, couleurs, espaces et finitions :
+                votre vision guide chaque choix.
+            </p>
+
+            <a href="personnalisation.html" class="btn-navy">
+                Personnaliser votre yacht <span>↗</span>
+            </a>
+        </div>
+
+        <div class="yachts-custom-image reveal"></div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="yachts-cta">
+        <div class="yachts-cta-image"></div>
+        <div class="yachts-cta-overlay"></div>
+
+        <div class="yachts-cta-content reveal">
+            <span class="section-label">YOUR NEXT CHAPTER</span>
+            <h2>
+                LET'S DESIGN<br>
+                <span>YOUR HORIZON.</span>
+            </h2>
+            <p>Imaginons ensemble votre prochain yacht.</p>
+            <a href="contact.html" class="btn-light">
+                Démarrer une conversation <span>↗</span>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="footer-main">
+
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">MARÉA<span>.</span></a>
+            <p>Beyond the Horizon.<br>Yacht Design & Shipbuilding.</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>EXPLORE</h4>
+            <a href="index.html">Accueil</a>
+            <a href="yachts.html">Nos yachts</a>
+            <a href="chantier.html">Notre chantier</a>
+            <a href="innovation.html">Innovation</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>OUR COLLECTION</h4>
+            <a href="m35.html">MARÉA M35</a>
+            <a href="m60.html">MARÉA M60</a>
+            <a href="explorer.html">Explorer 90</a>
+            <a href="personnalisation.html">Sur mesure</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>CONTACT</h4>
+            <a href="contact.html">Nous contacter ↗</a>
+            <span>MARÉA Shipbuilding</span>
+            <span>France</span>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <span>© <span id="year"></span> MARÉA SHIPBUILDING</span>
+        <span>BEYOND THE HORIZON.</span>
+        <a href="#">BACK TO TOP ↑</a>
+    </div>
+</footer>
+
+
+<script>
+
+    // Année automatique
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    // Menu mobile
+
+    const menuToggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("nav");
+
+    menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        menuToggle.classList.toggle("active");
+    });
+
+    nav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("open");
+            menuToggle.classList.remove("active");
+        });
+    });
+
+
+    // Header au scroll
+
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", () => {
+        header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+
+    // Animations
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach(element => {
+        observer.observe(element);
+    });
+
+
+    // Filtres des yachts
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const yachtCards = document.querySelectorAll(".catalog-card");
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            const filter = button.dataset.filter;
+
+            yachtCards.forEach(card => {
+
+                const category = card.dataset.category;
+                const visible = filter === "all" || category === filter;
+
+                card.classList.toggle("filtered-out", !visible);
+
+            });
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>

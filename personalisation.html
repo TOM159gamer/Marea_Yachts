@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personnalisation — MARÉA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="custom-page">
+
+<header class="header">
+  <a href="index.html" class="logo">MARÉA<span>.</span></a>
+  <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+  <nav class="nav">
+    <a href="index.html">Accueil</a>
+    <a href="yachts.html">Nos yachts</a>
+    <a href="personnalisation.html" class="active">Personnalisation</a>
+    <a href="chantier.html">Notre chantier</a>
+    <a href="innovation.html">Innovation</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="custom-hero">
+    <div class="custom-hero-image"></div>
+    <div class="custom-hero-content">
+      <p class="section-label">MARÉA — BESPOKE EXPERIENCE</p>
+      <h1>Imaginez<br>votre <em>MARÉA.</em></h1>
+      <p>
+        Chaque yacht raconte une histoire.
+        Faites de la vôtre une création unique.
+      </p>
+      <a href="#configurateur" class="btn-light">Commencer la configuration</a>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="custom-intro section-padding">
+    <div>
+      <p class="section-label">01 — VOTRE VISION</p>
+      <h2>Un yacht.<br>Votre <em>signature.</em></h2>
+    </div>
+
+    <p>
+      De la première esquisse aux finitions les plus discrètes,
+      MARÉA imagine chaque projet en collaboration avec son
+      propriétaire. Explorez quelques possibilités et composez
+      une première vision de votre futur yacht.
+    </p>
+  </section>
+
+  <!-- CONFIGURATEUR -->
+  <section class="configurator section-padding" id="configurateur">
+
+    <div class="configurator-heading">
+      <p class="section-label">02 — CONFIGURATEUR MARÉA</p>
+      <h2>Composez votre <em>univers.</em></h2>
+      <p>Choisissez les éléments qui correspondent à votre vision.</p>
+    </div>
+
+    <div class="configurator-layout">
+
+      <!-- APERCU -->
+      <div class="config-preview">
+        <div class="config-preview-image" id="previewImage"></div>
+
+        <div class="preview-overlay">
+          <span>MARÉA BESPOKE</span>
+          <strong id="previewModel">M35</strong>
+        </div>
+
+        <div class="preview-bottom">
+          <span id="previewColor">Blanc nacré</span>
+          <span id="previewInterior">Chêne naturel</span>
+        </div>
+      </div>
+
+      <!-- OPTIONS -->
+      <div class="config-options">
+
+        <div class="config-step">
+          <span class="step-number">01</span>
+          <div>
+            <h3>Choisissez votre modèle</h3>
+            <p>La base de votre projet.</p>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <label for="model">Modèle MARÉA</label>
+          <select id="model">
+            <option value="M35">MARÉA M35 — 35 mètres</option>
+            <option value="M60">MARÉA M60 — 60 mètres</option>
+            <option value="EXPLORER 90">EXPLORER 90 — 90 mètres</option>
+          </select>
+        </div>
+
+        <div class="config-divider"></div>
+
+        <div class="config-step">
+          <span class="step-number">02</span>
+          <div>
+            <h3>La couleur extérieure</h3>
+            <p>Définissez la première impression.</p>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <label>Finition de coque</label>
+
+          <div class="color-options">
+            <button class="color-choice selected" data-color="Blanc nacré" data-hex="#e8e5dc" style="--swatch:#e8e5dc" aria-label="Blanc nacré"></button>
+            <button class="color-choice" data-color="Bleu profond" data-hex="#172d43" style="--swatch:#172d43" aria-label="Bleu profond"></button>
+            <button class="color-choice" data-color="Gris aluminium" data-hex="#92999d" style="--swatch:#92999d" aria-label="Gris aluminium"></button>
+            <button class="color-choice" data-color="Noir graphite" data-hex="#25282b" style="--swatch:#25282b" aria-label="Noir graphite"></button>
+          </div>
+
+          <p class="selected-label" id="colorLabel">Blanc nacré</p>
+        </div>
+
+        <div class="config-divider"></div>
+
+        <div class="config-step">
+          <span class="step-number">03</span>
+          <div>
+            <h3>Les matières intérieures</h3>
+            <p>Créez votre atmosphère.</p>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <label for="interior">Matériau principal</label>
+          <select id="interior">
+            <option value="Chêne naturel">Chêne naturel</option>
+            <option value="Noyer foncé">Noyer foncé</option>
+            <option value="Marbre clair">Marbre clair</option>
+            <option value="Pierre minérale">Pierre minérale</option>
+          </select>
+        </div>
+
+        <div class="config-divider"></div>
+
+        <div class="config-step">
+          <span class="step-number">04</span>
+          <div>
+            <h3>L'ambiance intérieure</h3>
+            <p>Choisissez votre univers décoratif.</p>
+          </div>
+        </div>
+
+        <div class="option-group">
+          <div class="ambiance-options">
+            <label class="ambiance-card selected">
+              <input type="radio" name="ambiance" value="Contemporain" checked>
+              <span class="ambiance-icon">◻</span>
+              <strong>Contemporain</strong>
+              <small>Épuré et lumineux</small>
+            </label>
+
+            <label class="ambiance-card">
+              <input type="radio" name="ambiance" value="Naturel">
+              <span class="ambiance-icon">◇</span>
+              <strong>Naturel</strong>
+              <small>Chaleureux et doux</small>
+            </label>
+
+            <label class="ambiance-card">
+              <input type="radio" name="ambiance" value="Signature">
+              <span class="ambiance-icon">✧</span>
+              <strong>Signature</strong>
+              <small>Élégant et contrasté</small>
+            </label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RECAPITULATIF -->
+    <div class="config-summary">
+      <div>
+        <p class="section-label">VOTRE CONFIGURATION</p>
+        <h3 id="summaryModel">MARÉA M35</h3>
+        <p id="summaryDescription">
+          Blanc nacré · Chêne naturel · Contemporain
+        </p>
+      </div>
+
+      <a href="contact.html" class="btn-dark" id="contactConfig">
+        Discuter de ce projet
+      </a>
+    </div>
+
+    <p class="config-disclaimer">
+      Ce configurateur est un aperçu conceptuel. Les options
+      présentées ne constituent pas une offre commerciale.
+    </p>
+
+  </section>
+
+  <!-- ACCOMPAGNEMENT -->
+  <section class="custom-support section-padding">
+    <div class="custom-support-image"></div>
+
+    <div class="custom-support-content">
+      <p class="section-label">03 — ACCOMPAGNEMENT SUR-MESURE</p>
+      <h2>De l'idée<br>à la <em>réalisation.</em></h2>
+      <p>
+        Votre configuration est le point de départ d'un échange
+        avec nos équipes de conception. Ensemble, nous transformons
+        vos envies en un projet cohérent, pensé dans les moindres détails.
+      </p>
+      <a href="contact.html" class="text-link">Rencontrer MARÉA →</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="custom-cta section-padding">
+    <p class="section-label">MARÉA — BESPOKE EXPERIENCE</p>
+    <h2>Le sur-mesure<br>n'a pas de <em>limites.</em></h2>
+    <p>Chaque détail commence par une conversation.</p>
+    <a href="contact.html" class="btn-light">Nous contacter</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">MARÉA<span>.</span></a>
+      <p>Beyond the Horizon.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Explorer</h4>
+      <a href="yachts.html">Nos yachts</a>
+      <a href="personnalisation.html">Personnalisation</a>
+      <a href="innovation.html">Innovation</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>MARÉA</h4>
+      <a href="chantier.html">Notre chantier</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> MARÉA Yacht Design & Shipbuilding</span>
+    <span>Beyond the Horizon.</span>
+  </div>
+</footer>
+
+<script>
+  // ANNÉE
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // MENU MOBILE
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("nav-open");
+    menuToggle.textContent = nav.classList.contains("nav-open") ? "✕" : "☰";
+  });
+
+  // HEADER
+  window.addEventListener("scroll", () => {
+    document.querySelector(".header").classList.toggle("scrolled", window.scrollY > 40);
+  });
+
+  // ELEMENTS DU CONFIGURATEUR
+  const modelSelect = document.getElementById("model");
+  const interiorSelect = document.getElementById("interior");
+  const colorButtons = document.querySelectorAll(".color-choice");
+  const ambianceInputs = document.querySelectorAll('input[name="ambiance"]');
+
+  let selectedColor = "Blanc nacré";
+  let selectedHex = "#e8e5dc";
+
+  // MISE A JOUR DU RECAPITULATIF
+  function updateConfiguration() {
+    const model = modelSelect.value;
+    const interior = interiorSelect.value;
+    const ambiance = document.querySelector('input[name="ambiance"]:checked').value;
+
+    document.getElementById("previewModel").textContent = model;
+    document.getElementById("previewColor").textContent = selectedColor;
+    document.getElementById("previewInterior").textContent = interior;
+
+    document.getElementById("summaryModel").textContent = "MARÉA " + model;
+
+    document.getElementById("summaryDescription").textContent =
+      selectedColor + " · " + interior + " · " + ambiance;
+
+    document.getElementById("contactConfig").href =
+      "contact.html?modele=" + encodeURIComponent(model) +
+      "&couleur=" + encodeURIComponent(selectedColor) +
+      "&matiere=" + encodeURIComponent(interior) +
+      "&ambiance=" + encodeURIComponent(ambiance);
+
+    const image = document.getElementById("previewImage");
+
+    image.style.setProperty("--hull-color", selectedHex);
+    image.classList.remove("preview-m35", "preview-m60", "preview-explorer");
+
+    if (model === "M35") image.classList.add("preview-m35");
+    if (model === "M60") image.classList.add("preview-m60");
+    if (model === "EXPLORER 90") image.classList.add("preview-explorer");
+
+    document.getElementById("colorLabel").textContent = selectedColor;
+  }
+
+  modelSelect.addEventListener("change", updateConfiguration);
+  interiorSelect.addEventListener("change", updateConfiguration);
+
+  colorButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      colorButtons.forEach(item => item.classList.remove("selected"));
+      button.classList.add("selected");
+
+      selectedColor = button.dataset.color;
+      selectedHex = button.dataset.hex;
+
+      updateConfiguration();
+    });
+  });
+
+  ambianceInputs.forEach(input => {
+    input.addEventListener("change", () => {
+      document.querySelectorAll(".ambiance-card").forEach(card => {
+        card.classList.remove("selected");
+      });
+
+      input.closest(".ambiance-card").classList.add("selected");
+      updateConfiguration();
+    });
+  });
+
+  updateConfiguration();
+
+  // ANIMATIONS
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+</script>
+
+</body>
+</html>
